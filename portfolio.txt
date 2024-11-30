@@ -1,0 +1,19 @@
+Portfolio Project: John Paul Ocumen
+
+Overview:
+This project showcases my skills as a software developer, including web and mobile application development. 
+It integrates AI technology, responsive design, and user-friendly interfaces.
+
+Features:
+1. Light/Dark mode toggle for better usability.
+2. Interactive navigation bar with dynamic animations.
+3. Projects section featuring a carousel with SwiperJS.
+4. AI-powered applications like the Black Sigatoka Detector.
+5. Contact section with integrated EmailJS for real-time messaging.
+
+Technology Stack:
+- Frontend: HTML, CSS, JavaScript
+- Libraries/Frameworks: React, SwiperJS, ScrollReveal
+- Backend: PHP (for email handling)
+- AI Integration: TensorFlow (for Black Sigatoka Detector)
+- Design Tools: Figma
