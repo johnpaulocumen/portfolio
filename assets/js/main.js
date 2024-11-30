@@ -35,29 +35,19 @@ document.getElementById('homeLink').addEventListener('click', function (event) {
 });
 
 
-// Function to handle "View", "Download", and "Download & Install" button actions
+// Function to handle "View" and "Download" button actions
 function handleButtonClick(event) {
   const buttonClicked = event.target.id;
+  const resumeUrl = './assets/JohnPaul_Ocumen_Resume.pdf';
   
   if (buttonClicked === 'viewButton') {
     // Open the resume in a new tab
-    const resumeUrl = './assets/JohnPaul_Ocumen_Resume.pdf';
     window.open(resumeUrl, '_blank');
   } else if (buttonClicked === 'downloadButton') {
     // Trigger download of the resume
-    const resumeUrl = './assets/JohnPaul_Ocumen_Resume.pdf';
     const a = document.createElement('a');
     a.href = resumeUrl;
     a.download = resumeUrl.split('/').pop();  // Use the filename from the URL
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);  // Clean up the element after clicking
-  } else if (buttonClicked === 'bsDownloadButton') {
-    // Trigger download of the Black Sigatoka Detector APK
-    const apkUrl = './assets/bs_detector.apk';
-    const a = document.createElement('a');
-    a.href = apkUrl;
-    a.download = apkUrl.split('/').pop();  // Use the filename from the URL
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);  // Clean up the element after clicking
@@ -67,7 +57,6 @@ function handleButtonClick(event) {
 // Add event listeners for all relevant buttons
 document.getElementById('viewButton').addEventListener('click', handleButtonClick);
 document.getElementById('downloadButton').addEventListener('click', handleButtonClick);
-document.getElementById('bsDownloadButton').addEventListener('click', handleButtonClick);
 
 
 
